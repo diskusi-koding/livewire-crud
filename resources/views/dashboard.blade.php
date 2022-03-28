@@ -1,15 +1,18 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
+    <h1 class="my-4">Selamat Datang di <strong class="text-success">MyContact</strong></h1>
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <x-jet-welcome />
-            </div>
+    <div class="card bg-white border-0 border-top">
+        <div class="card-header bg-white border-0 my-2 d-flex justify-content-between">
+            <h4 class="card-title my-2">Semua Data Kontak</h4>
+            <a href="{{ route('contact.create') }}">
+                <button class="btn btn-light border-0 border-bottom">
+                    Contact Baru
+                </button>
+            </a>
+        </div>
+        <div class="card-body">
+            <livewire:contact.index/>
         </div>
     </div>
+
 </x-app-layout>
