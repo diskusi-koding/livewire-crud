@@ -69,7 +69,9 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    /*1. ganti ke timezone Indonesia*/
+
+    'timezone' => 'Asia/Jakarta',
 
     /*
     |--------------------------------------------------------------------------
@@ -82,7 +84,9 @@ return [
     |
     */
 
-    'locale' => 'en',
+    /*2. bahasa yang digunakan di app/project*/
+
+    'locale' => 'id',
 
     /*
     |--------------------------------------------------------------------------
@@ -108,7 +112,9 @@ return [
     |
     */
 
-    'faker_locale' => 'en_US',
+    /*3. bahasa yang digunakan faker*/
+
+    'faker_locale' => 'id_ID',
 
     /*
     |--------------------------------------------------------------------------
